@@ -5,7 +5,7 @@
 			<footer class="max-w-container-max-width m-auto h-14 md:h-20">
 				<div class="h-full flex items-center justify-between">
 					<div>
-						<p><span class="text-gray-600">© 2020</span> Romadhan Prasetyo</p>
+						<p><span class="text-gray-700">© 2020</span> Romadhan Prasetyo</p>
 					</div>
 					<div>
 						<ul class="flex">
