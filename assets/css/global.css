@@ -30,11 +30,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  border-left: 1px solid #ffc93c;
+  border-left: 1px solid #848ccf;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #ffc93c;
+  background-color: #848ccf;
 }
 
 .light-mode body {
@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .gl-link-color {
-  color: #ffc93c;
+  color: #848ccf;
 }
 
 .gl-wave {

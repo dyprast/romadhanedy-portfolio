@@ -1,5 +1,4 @@
 export default {
-  colorMode: "dark",
   ssr: false,
   target: "static",
   head: {

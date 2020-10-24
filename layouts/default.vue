@@ -18,6 +18,11 @@ import Footer from "@/components/Footer";
 import Wave from "@/components/Wave";
 
 export default {
+  mounted() {
+		document.getElementsByTagName('html')[0].classList.remove('light-mode')
+		document.getElementsByTagName('html')[0].classList.remove('dark-mode')
+		document.getElementsByTagName('html')[0].classList.add('dark-mode')
+	},
   components: {
     Header,
     Footer,

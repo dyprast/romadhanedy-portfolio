@@ -12,14 +12,14 @@
           </h1>
           <div>
             <button
-              v-if="$colorMode.preference === 'dark'"
+              v-if="colorMode_ === 'dark'"
               @click="changeColorMode('light')"
               class="focus:outline-none text-3xl uppercase"
             >
               🌙
             </button>
             <button
-              v-else-if="$colorMode.preference === 'light'"
+              v-else-if="colorMode_ === 'light'"
               @click="changeColorMode('dark')"
               class="focus:outline-none text-3xl uppercase"
             >
@@ -34,9 +34,15 @@
 
 <script>
 export default {
+	data() {
+		return {
+			colorMode_: 'dark'
+		}
+	},
   methods: {
     changeColorMode(colorMode) {
       if (colorMode) {
+				this.colorMode_ = colorMode
         this.$colorMode.preference = colorMode;
       }
     },
