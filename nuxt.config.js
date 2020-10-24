@@ -1,6 +1,5 @@
 export default {
   colorMode: "dark",
-//   loading: '~/components/Loader',
   ssr: false,
   target: "static",
   head: {
