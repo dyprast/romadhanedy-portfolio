@@ -3,9 +3,9 @@
         <section>
             <div class="container mx-auto px-4">
                 <div class="gl-readable-line-length">
-                    <p>Hello! I am Romadhan Prasetyo. I am a web developer. Most of my work is open source available on <a href="https://github.com/dyprast" target="_blank" class="font-semibold gl-link-color">GitHub</a>.</p>
+                    <p class="text-base">Hello! I am <span class="font-bold">Romadhan Prasetyo</span>. I am a <span class="font-semibold">Web Developer</span>. My 💚 favorite <span class="font-semibold">programming language</span> are Javascipt, PHP, GoLang, and Python. <span class="font-semibold">Working</span> from home during quarantine 🏡</p>
                     <br>
-                    <p>I also enjoy 🎸.</p>
+                    <p class="text-base">I also enjoy 🎸. Favorite song: <span class="font-semibold">Love Story - Taylor Swift 🎼</span></p>
                 </div>
             </div>
         </section>

@@ -1,29 +1,36 @@
 <template>
-	<div>
-		<Wave class="gl-wave" />
+	<div class="sm:mt-0 md:mt-16 lg:mt-32">
 		<div class="container mx-auto px-4">
-			<footer class="max-w-container-max-width m-auto h-14 md:h-20">
-				<div class="h-full flex items-center justify-between">
-					<div>
-						<p><span class="text-gray-700">© 2020</span> Romadhan Prasetyo</p>
+			<footer class="max-w-container-max-width m-auto sm:h-14 md:h-20">
+				<div class="grid sm:grid-cols-1 md:grid-cols-2 items-center">
+					<div class="flex justify-center">
+						<p class="sm:text-gray-base md:text-white"><span class="font-semibold">© {{ yearNow }}</span> Romadhan Prasetyo</p>
 					</div>
-					<div>
-						<ul class="flex">
-							<li class="mr-2 flex">
-								<a href="mailto:romadhanedy@gmail.com" target="blank" class="mr-2"> Email </a>
-								<span class="text-grey-base"> / </span>
-							</li>
-							<li class="mr-2 flex">
-								<a href="https://www.linkedin.com/in/romadhan-prasetyo/" target="blank" class="mr-2"> Linkedin </a>
-								<span class="text-grey-base"> / </span>
-							</li>
-							<li class="mr-2 flex">
-								<a href="https://github.com/dyprast" target="blank" class="mr-2"> GitHub </a>
-							</li>
-						</ul>
-					</div>
+                    <ul class="flex justify-center">
+                        <li class="mr-2">
+                            <a href="mailto:romadhanedy@gmail.com" target="blank" class="sm:text-gray-base md:text-white mr-2"> Email </a>
+                            <span class="sm:text-gray-base md:text-white"> * </span>
+                        </li>
+                        <li class="mr-2">
+                            <a href="https://www.linkedin.com/in/romadhan-prasetyo/" target="blank" class="sm:text-gray-base md:text-white mr-2"> Linkedin </a>
+                            <span class="sm:text-gray-base md:text-white"> * </span>
+                        </li>
+                        <li class="">
+                            <a href="https://github.com/dyprast" target="blank" class="sm:text-gray-base md:text-white"> GitHub </a>
+                        </li>
+                    </ul>
 				</div>
 			</footer>
 		</div>
 	</div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            yearNow: this.$dateFns.format(new Date(), 'yyyy')
+        }
+    }
+}
+</script>

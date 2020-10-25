@@ -8,12 +8,20 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }]
   },
   css: ["~/assets/css/global.css"],
   components: true,
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/date-fns'
+  ],
   buildModules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode"
   ],
+  env: {
+		API_PORTFOLIO: "https://raw.githubusercontent.com/romadhanedymyid/databasejson/master",
+		API_EMAIL: "https://romadhanedymyid.herokuapp.com"
+	}
 };

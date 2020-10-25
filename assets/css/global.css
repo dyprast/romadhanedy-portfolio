@@ -13,6 +13,11 @@
   src: url(../fonts/spacegrotesk/SpaceGrotesk-Regular.otf);
 }
 
+@font-face {
+  font-family: Segoe UI;
+  src: url(../fonts/segoeui/Segoe-UI.woff);
+}
+
 .illustrations-under-construction {
   background: url(../img/under_construction.svg);
   background-repeat: no-repeat;
@@ -22,7 +27,7 @@
 }
 
 html {
-  font-family: Space Grotesk,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-family: Space Grotesk, Segoe UI;
 }
 
 body::-webkit-scrollbar {
@@ -72,5 +77,9 @@ body::-webkit-scrollbar-thumb {
   bottom: 0;
   left: 0;
   z-index: -1;
+}
+
+.gl-btn {
+  cursor: pointer;
 }
 /*# sourceMappingURL=global.css.map */

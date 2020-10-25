@@ -10,6 +10,12 @@
               <span class="align-middle">Romadhan.</span>
             </nuxt-link>
           </h1>
+					<div>
+						<div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+							<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Info</span>
+							<span class="font-semibold mr-2 text-left flex-auto">this website is under construction</span>
+						</div>
+					</div>
           <div>
             <button
               v-if="colorMode_ === 'dark'"
@@ -34,12 +40,20 @@
 
 <script>
 export default {
+	mounted() {
+		this.getCurrentColorMode()
+	},
 	data() {
 		return {
-			colorMode_: 'light'
+			colorMode_: ''
 		}
 	},
   methods: {
+		getCurrentColorMode() {
+			const currentMode = this.$colorMode.preference
+			if (currentMode === 'light' || currentMode === 'system') this.colorMode_ = 'light'
+			else this.colorMode_ = currentMode
+		},
     changeColorMode(colorMode) {
       if (colorMode) {
 				this.colorMode_ = colorMode

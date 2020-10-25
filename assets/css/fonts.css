@@ -12,4 +12,9 @@
   font-family: Space Grotesk;
   src: url(../fonts/spacegrotesk/SpaceGrotesk-Regular.otf);
 }
+
+@font-face {
+  font-family: Segoe UI;
+  src: url(../fonts/segoeui/Segoe-UI.woff);
+}
 /*# sourceMappingURL=fonts.css.map */
