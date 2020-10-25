@@ -1,11 +1,14 @@
 <template>
-    <div class="mt-8 mb-8">
+    <div class="my-24 mb-48 bg-gray-300">
         <section>
             <div class="container mx-auto px-4 py-8">
                 <h1 class="text-xl leading-base font-bold body-weight">
                     get in touch.
                 </h1>
                 <div class="mt-8">
+                    <div class="illustrations-under-construction"></div>
+                </div>
+                <!-- <div class="mt-8">
                     <form @submit.prevent="submitContactForm">
                         <div>
                             <div class="col-sm-4 col-xs-12 p5">
@@ -20,7 +23,7 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> -->
             </div>
         </section>
     </div>

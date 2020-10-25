@@ -22,7 +22,10 @@
                     </div>
                 </div>
                 <div class="mt-8 text-center w-full">
-                    <a href="javascript:void(0)" class="gl-btn text-sm border p-3 mt-3 light-text-black dark-text-white border-indigo-400 bg-transparent hover:bg-indigo-400 transition duration-500 ease-in-out">View Details</a>
+                    <a href="javascript:void(0)" class="gl-btn text-sm border p-3 mt-3 light-text-black dark-text-white border-indigo-400 bg-transparent hover:bg-indigo-400 transition duration-500 ease-in-out" @click="viewPortfolioStatus()">
+                        <span v-if="!viewStatus">View More</span>
+                        <span v-else>View Less</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -34,7 +37,9 @@
         data() {
             return {
                 isLoadingData: false,
-                portfolios: []
+                portfolios: [],
+                portfoliosStore: [],
+                viewStatus: false
             }
         },
         mounted() {
@@ -50,7 +55,8 @@
                     const getAll		= await this.$store.dispatch('portfolio/index')
                     this.isLoadingData 	= false
                     
-                    this.portfolios     = getAll.data
+                    this.portfolios         = getAll.data.slice(0, 4)
+                    this.portfoliosStore    = getAll.data
                 }
                 catch(err){
                     this.portfolios     = []
@@ -58,6 +64,16 @@
                     console.error(err)
                 }
             },
+            viewPortfolioStatus() {
+                if (this.viewStatus) {
+                    this.viewStatus = false
+                    this.portfolios = this.portfoliosStore.slice(0, 4)
+                }
+                else {
+                    this.viewStatus = true
+                    this.portfolios = this.portfoliosStore
+                }
+            }
         }
     }
 </script>
