@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACK,AAAD,iCAAoB,CAAC;EACjB,UAAU,EAAE,kCAAkC;EAC9C,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,OAAO;EACxB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CAAG",
-    "sources": [
-        "../sass/illustrations.sass"
-    ],
-    "names": [],
-    "file": "illustrations.css"
-}

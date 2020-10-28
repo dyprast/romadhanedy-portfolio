@@ -20,14 +20,14 @@
             <button
               v-if="colorMode_ === 'dark'"
               @click="changeColorMode('light')"
-              class="focus:outline-none text-3xl uppercase"
+              class="focus:outline-none text-4xl uppercase"
             >
               🌙
             </button>
             <button
               v-else-if="colorMode_ === 'light'"
               @click="changeColorMode('dark')"
-              class="focus:outline-none text-3xl uppercase"
+              class="focus:outline-none text-4xl uppercase"
             >
               ☀️
             </button>
@@ -52,7 +52,9 @@ export default {
 		getCurrentColorMode() {
 			const currentMode = this.$colorMode.preference
 			if (currentMode === 'light' || currentMode === 'system') this.colorMode_ = 'light'
-			else this.colorMode_ = currentMode
+            else this.colorMode_ = currentMode
+            
+            this.$colorMode.preference = this.colorMode_
 		},
     changeColorMode(colorMode) {
       if (colorMode) {

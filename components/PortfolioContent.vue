@@ -46,9 +46,6 @@
             this.getPortfolio()
         },
         methods: {
-            sortJSON() {
-
-            },
             async getPortfolio() { 
                 try{
                     this.isLoadingData 	= true
