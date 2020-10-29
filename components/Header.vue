@@ -55,11 +55,8 @@ export default {
 	},
   methods: {
 		getCurrentColorMode() {
-			const currentMode = this.$colorMode.preference
-			if (currentMode === 'light' || currentMode === 'system') this.colorMode_ = 'light'
-            else this.colorMode_ = currentMode
-            
-            this.$colorMode.preference = this.colorMode_
+			const currentMode = this.$colorMode.value
+			this.colorMode_ = currentMode
 		},
     changeColorMode(colorMode) {
       if (colorMode) {

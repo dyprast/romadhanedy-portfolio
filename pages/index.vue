@@ -2,7 +2,7 @@
     <div>
         <Hero/>
 
-        <PortfolioContent/>
+        <!-- <PortfolioContent/> -->
 
         <SkillsContent/>
 

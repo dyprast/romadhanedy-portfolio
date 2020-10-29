@@ -22,18 +22,6 @@ html {
   font-family: Space Grotesk, Segoe UI;
 }
 
-body::-webkit-scrollbar {
-  width: 8px;
-}
-
-body::-webkit-scrollbar-track {
-  border-left: 1px solid #848ccf;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #848ccf;
-}
-
 .light-mode body {
   background-color: #f3f5f4;
   color: #243746;
@@ -46,7 +34,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .dark-mode body {
-  background-color: #121212;
+  background-color: #091a28;
   color: #ebf4f1;
   -webkit-transition: .4s all;
   transition: .4s all;
