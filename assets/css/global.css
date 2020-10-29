@@ -67,4 +67,25 @@ html {
 .gl-btn {
   cursor: pointer;
 }
+
+.gl-card:hover .gl-card-category {
+  margin-top: 10px;
+}
+
+.gl-card .gl-card-category {
+  margin-top: -30px;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+.gl-card .gl-overflow {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+.gl-card:hover .gl-overflow {
+  background-color: rgba(0, 0, 0, 0.4);
+}
 /*# sourceMappingURL=global.css.map */

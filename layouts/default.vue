@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/Layouts/Header";
+import Footer from "@/components/Layouts/Footer";
 import Wave from "@/components/Wave";
 
 export default {

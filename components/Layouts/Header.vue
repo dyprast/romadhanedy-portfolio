@@ -22,14 +22,14 @@
               @click="changeColorMode('light')"
               class="focus:outline-none text-4xl uppercase"
             >
-              <IconDark/>
+              <IconMoon/>
             </button>
             <button
               v-else-if="colorMode_ === 'light'"
               @click="changeColorMode('dark')"
               class="focus:outline-none text-4xl uppercase"
             >
-              <IconLight/>
+              <IconSun/>
             </button>
           </div>
         </div>
@@ -39,8 +39,8 @@
 </template>
 
 <script>
-import IconLight from '@/components/IconLight'
-import IconDark from '@/components/IconDark'
+import IconSun from '@/components/Icons/Sun'
+import IconMoon from '@/components/Icons/Moon'
 export default {
 	mounted() {
 		this.getCurrentColorMode()
@@ -51,7 +51,7 @@ export default {
 		}
 	},
 	components: {
-		IconLight, IconDark
+		IconSun, IconMoon
 	},
   methods: {
 		getCurrentColorMode() {

@@ -24,9 +24,5 @@ export default {
   buildModules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode"
-  ],
-  env: {
-		API_PORTFOLIO: "https://raw.githubusercontent.com/romadhanedymyid/databasejson/master",
-		API_EMAIL: "https://romadhanedymyid.herokuapp.com"
-	}
+  ]
 };
