@@ -2,7 +2,7 @@ export default {
   ssr: false,
   target: "static",
   head: {
-    title: "Romadhan Prasetyo",
+    title: "Romadhan Prasetyo | Dyprast",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },

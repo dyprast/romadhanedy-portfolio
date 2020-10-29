@@ -1,6 +1,6 @@
 <template>
 	<div class="sm:mt-0 md:mt-16 lg:mt-32">
-		<div class="container mx-auto px-4">
+		<div class="container mx-auto px-4 pb-8 md:pb-0">
 			<footer class="max-w-container-max-width m-auto sm:h-14 md:h-20">
 				<div class="grid sm:grid-cols-1 md:grid-cols-2 items-center">
 					<div class="flex justify-center">

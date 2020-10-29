@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pt-5 md:pt-0">
     <div class="container mx-auto px-4">
       <header class="max-w-container-max-width m-auto h-14 md:h-20">
         <div class="h-full flex items-center justify-between">
@@ -16,20 +16,20 @@
 							<span class="font-semibold mr-2 text-left flex-auto">this website is under construction</span>
 						</div>
 					</div>
-          <div>
+          <div class="flex item-center">
             <button
               v-if="colorMode_ === 'dark'"
               @click="changeColorMode('light')"
               class="focus:outline-none text-4xl uppercase"
             >
-              🌙
+              <IconDark/>
             </button>
             <button
               v-else-if="colorMode_ === 'light'"
               @click="changeColorMode('dark')"
               class="focus:outline-none text-4xl uppercase"
             >
-              ☀️
+              <IconLight/>
             </button>
           </div>
         </div>
@@ -39,6 +39,8 @@
 </template>
 
 <script>
+import IconLight from '@/components/IconLight'
+import IconDark from '@/components/IconDark'
 export default {
 	mounted() {
 		this.getCurrentColorMode()
@@ -47,6 +49,9 @@ export default {
 		return {
 			colorMode_: ''
 		}
+	},
+	components: {
+		IconLight, IconDark
 	},
   methods: {
 		getCurrentColorMode() {

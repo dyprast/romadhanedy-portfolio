@@ -56,6 +56,11 @@ body::-webkit-scrollbar-thumb {
   background-color: #1e1e1e;
 }
 
+.dark-mode .gl-dark-bg-transparent {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
 .gl-readable-line-length {
   max-width: 820px;
 }
