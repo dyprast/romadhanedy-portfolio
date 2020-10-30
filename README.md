@@ -1,3 +1,3 @@
-# Romadhan's Web Portfolio
+# romadhanedy.my.id 🌤
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+[![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://github.com/dyprast)
