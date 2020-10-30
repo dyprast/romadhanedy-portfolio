@@ -1,5 +1,17 @@
 const data = [
   {
+    name: "Nabila",
+    release: "2019 July",
+    technologies: ["Private School Project"],
+    description:
+      "Artificial Intelligence, Speech Recognition",
+    link: "_nuxt/assets/video/nabila.mp4",
+    screenshoot: "nabila.png",
+    category: {
+      name: "Neural Network"
+    }
+  },
+  {
     name: "Seni Indonesia",
     release: "2019 July",
     technologies: ["Cordova", "Sqlite"],
@@ -8,7 +20,6 @@ const data = [
     link: "https://www.youtube.com/watch?v=vh422u6T-PY",
     screenshoot: "seni-indonesia.jpg",
     category: {
-      id: 2,
       name: "Android"
     }
   },
@@ -20,7 +31,6 @@ const data = [
     link: "https://github.com/dyprast/dychord",
     screenshoot: "dychord.jpg",
     category: {
-      id: 2,
       name: "Android"
     }
   },
