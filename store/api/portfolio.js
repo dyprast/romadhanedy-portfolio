@@ -5,7 +5,7 @@ const data = [
     technologies: ["Private School Project"],
     description:
       "Artificial Intelligence, Speech Recognition",
-    link: "_nuxt/assets/video/nabila.mp4",
+    link: "https://github.com/dyprast/romadhanedy.my.id/blob/main/assets/video/nabila.mp4?raw=true",
     screenshoot: "nabila.png",
     category: {
       name: "Neural Network"
