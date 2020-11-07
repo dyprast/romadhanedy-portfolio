@@ -1,5 +1,5 @@
 <template>
-    <div class="relative overflow-hidden border gl-card">
+    <div class="relative overflow-hidden border bg-white gl-dark-bg-transparent gl-card">
         <div class="relative">
             <div class="absolute gl-overflow"></div>
             <p class="absolute text-gray-700 text-sm mt-2 ml-2 gl-card-category">

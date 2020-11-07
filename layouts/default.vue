@@ -6,9 +6,9 @@
       <Nuxt />
     </main>
 
-    <Footer />
+    <!-- <Footer /> -->
 
-    <Wave class="gl-wave sm: hidden md:block" />
+    <Wave class="gl-wave"/>
   </div>
 </template>
 

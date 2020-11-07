@@ -1,33 +1,33 @@
 <template>
-  <div class="pt-5 md:pt-0">
+  <div class="pt-8 md:pt-5">
     <div class="container mx-auto px-4">
       <header class="max-w-container-max-width m-auto h-14 md:h-20">
-        <div class="h-full flex items-center justify-between">
+        <div class="h-full flex flex-wrap items-center justify-center md:justify-between">
           <h1
-            class="text-xl leading-base font-bold body-weight lowercase md:text-six md:leading-six"
+            class="text-2xl md:text-3xl leading-base font-bold body-weight lowercase md:text-six md:leading-six"
           >
             <nuxt-link to="/">
-              <span class="align-middle">Romadhan.</span>
+              <span class="align-middle gl-heading-stroke" :data-title="pages.title">{{ pages.title }}</span>
             </nuxt-link>
           </h1>
-					<div>
-						<div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
-							<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Info</span>
-							<span class="font-semibold mr-2 text-left flex-auto">this website is under construction</span>
-						</div>
-					</div>
-          <div class="flex item-center">
+          <div class="flex item-center mt-8 md:mt-0">
+            <nuxt-link to="/" class="text-lg px-4 gl-link" :class="menu('home')">Home</nuxt-link>
+            <nuxt-link to="/projects" class="text-lg px-4 gl-link" :class="menu('projects')">Projects</nuxt-link>
+            <nuxt-link to="/skills" class="text-lg px-4 gl-link" :class="menu('skills')">Skills</nuxt-link>
+            <!-- <nuxt-link to="/" class="text-lg px-4 gl-link" :class="menu('contact')">Contact</nuxt-link> -->
             <button
               v-if="colorMode_ === 'dark'"
               @click="changeColorMode('light')"
-              class="focus:outline-none text-4xl uppercase"
+              class="focus:outline-none ml-5 text-4xl uppercase"
+              style="margin-top: -5px"
             >
               <IconMoon/>
             </button>
             <button
               v-else-if="colorMode_ === 'light'"
               @click="changeColorMode('dark')"
-              class="focus:outline-none text-4xl uppercase"
+              class="focus:outline-none ml-5 text-4xl uppercase"
+              style="margin-top: -5px"
             >
               <IconSun/>
             </button>
@@ -39,21 +39,31 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import IconSun from '@/components/Icons/Sun'
 import IconMoon from '@/components/Icons/Moon'
 export default {
+	computed: {
+    ...mapState({ pages: (state) => state.pages }),
+  },
+	components: {
+		IconSun, IconMoon
+	},
 	mounted() {
+		this.getTitle()
 		this.getCurrentColorMode()
 	},
 	data() {
 		return {
+			title: '',
 			colorMode_: ''
 		}
 	},
-	components: {
-		IconSun, IconMoon
-	},
   methods: {
+		getTitle() {
+			const title = this.pages.title
+			this.title = title
+		},
 		getCurrentColorMode() {
 			const currentMode = this.$colorMode.value
 			this.colorMode_ = currentMode
@@ -63,6 +73,14 @@ export default {
 				this.colorMode_ = colorMode
         this.$colorMode.preference = colorMode;
       }
+		},
+		menu(menuName) {
+      const name = menuName,
+        current_page = this.pages.current_page;
+        if (name == current_page) {
+          return "active";
+        }
+        return "";
     },
   },
 };
