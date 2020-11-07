@@ -1,25 +1,25 @@
 @font-face {
-  font-family: Space Grotesk Bold;
-  src: url(../fonts/spacegrotesk/SpaceGrotesk-Bold.otf);
+  font-family: Metropolis Extra Bold;
+  src: url(../fonts/Metropolis/Metropolis-ExtraBold.otf);
 }
 
 @font-face {
-  font-family: Space Grotesk Medium;
-  src: url(../fonts/spacegrotesk/SpaceGrotesk-Medium.otf);
+  font-family: Metropolis Bold;
+  src: url(../fonts/Metropolis/Metropolis-Bold.otf);
 }
 
 @font-face {
-  font-family: Space Grotesk;
-  src: url(../fonts/spacegrotesk/SpaceGrotesk-Regular.otf);
+  font-family: Metropolis Medium;
+  src: url(../fonts/Metropolis/Metropolis-Medium.otf);
 }
 
 @font-face {
-  font-family: Segoe UI;
-  src: url(../fonts/segoeui/Segoe-UI.woff);
+  font-family: Metropolis;
+  src: url(../fonts/Metropolis/Metropolis-Regular.otf);
 }
 
 html {
-  font-family: Space Grotesk, Segoe UI;
+  font-family: Metropolis;
 }
 
 .light-mode body {
@@ -31,6 +31,14 @@ html {
 
 .light-mode .bg-surface-color {
   background-color: #f5f5f5;
+}
+
+.light-mode .gl-heading-stroke {
+  color: #41b883;
+}
+
+.light-mode .gl-heading-stroke::after {
+  color: #f3f5f4;
 }
 
 .dark-mode body {
@@ -53,8 +61,22 @@ html {
   max-width: 820px;
 }
 
+.gl-bg-color {
+  background-color: #ebf4f1;
+}
+
+.gl-link {
+  font-family: Metropolis Bold;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.gl-link:hover, .gl-link.active {
+  color: #41b883;
+}
+
 .gl-link-color {
-  color: #848ccf;
+  color: #41b883;
 }
 
 .gl-wave {
@@ -87,5 +109,54 @@ html {
 
 .gl-card:hover .gl-overflow {
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.gl-heading-stroke {
+  position: relative;
+  display: inline-block;
+  letter-spacing: .025em;
+  font-family: Metropolis Extra Bold;
+  text-transform: uppercase;
+}
+
+.gl-heading-stroke::after {
+  content: attr(data-title);
+  z-index: -1;
+  text-transform: uppercase;
+  position: absolute;
+  top: 3.5px;
+  left: 3.5px;
+  width: calc(100% + 5px);
+  color: #091a28;
+  text-shadow: -1px -1px 0 #41b883, 1px -1px 0 #41b883, -1px 1px 0 #41b883, 1px 1px 0 #41b883;
+}
+
+.gl-img-stroke {
+  position: relative;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.gl-img-stroke img {
+  width: 300px;
+  height: auto;
+}
+
+.gl-img-stroke:hover::after {
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.gl-img-stroke::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 299px;
+  border: 3px solid #41b883;
+  z-index: -1;
 }
 /*# sourceMappingURL=global.css.map */
