@@ -18,6 +18,10 @@
   src: url(../fonts/Metropolis/Metropolis-Regular.otf);
 }
 
+* {
+  overflow-anchor: none;
+}
+
 html {
   font-family: Metropolis;
 }
@@ -124,8 +128,8 @@ html {
   z-index: -1;
   text-transform: uppercase;
   position: absolute;
-  top: 3.5px;
-  left: 3.5px;
+  top: 3px;
+  left: 3px;
   width: calc(100% + 5px);
   color: #091a28;
   text-shadow: -1px -1px 0 #41b883, 1px -1px 0 #41b883, -1px 1px 0 #41b883, 1px 1px 0 #41b883;
@@ -158,5 +162,9 @@ html {
   height: 299px;
   border: 3px solid #41b883;
   z-index: -1;
+}
+
+.gl-border-theme {
+  border-bottom: 1.5px solid #41b883;
 }
 /*# sourceMappingURL=global.css.map */

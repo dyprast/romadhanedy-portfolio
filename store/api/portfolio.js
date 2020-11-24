@@ -1,5 +1,16 @@
 const data = [
   {
+    name: "Katalog Produk INDOHP",
+    release: "2020 Nov",
+    technologies: ["Nuxtjs"],
+    description: "Katalog produk INDOHP - PT Indonesia Hakiki Pertama",
+    link: "https://katalog.indohp.co.id",
+    screenshoot: "product-catalog-indohp.jpg",
+    category: {
+      name: "Web"
+    }
+  },
+  {
     name: "Nabila",
     release: "2019 July",
     technologies: ["Private School Project"],

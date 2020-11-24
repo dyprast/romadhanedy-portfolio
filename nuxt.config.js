@@ -15,7 +15,9 @@ export default {
 		]
   },
   css: ["~/assets/css/global.css"],
-
+  plugins: [
+    { src: '~/plugins/awesomeConsole', ssr: false}
+  ],
   components: true,
   modules: [
     '@nuxtjs/axios',

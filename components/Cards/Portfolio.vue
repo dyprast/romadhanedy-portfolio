@@ -5,7 +5,7 @@
             <p class="absolute text-gray-700 text-sm mt-2 ml-2 gl-card-category">
                 <span class="badge bg-indigo-800 text-white px-2 py-1 text-sm mr-2 mb-2" v-for="(technology,index) in technologies" :key="index">{{ technology }}</span>
             </p>
-            <img class="w-full" :src="screenshoot" :alt="name">
+            <img class="w-full object-cover" style="max-height: 200px" :src="screenshoot" :alt="name">
         </div>
         <div class="px-4 py-2">
             <div class="font-bold text-xl mb-2">

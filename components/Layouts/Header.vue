@@ -1,6 +1,6 @@
 <template>
-  <div class="pt-8 md:pt-5">
-    <div class="container mx-auto px-4">
+  <div class="pt-8 md:pt-5 gl-border-theme">
+    <div class="container mx-auto px-4 pb-8">
       <header class="max-w-container-max-width m-auto h-14 md:h-20">
         <div class="h-full flex flex-wrap items-center justify-center md:justify-between">
           <h1
