@@ -1,9 +1,20 @@
 const data = [
   {
-    name: "Katalog Produk INDOHP",
+    name: "INDOHP Rekber",
+    release: "2020 Dec",
+    technologies: ["Nuxtjs"],
+    description: "INDOHP Rekber",
+    link: "https://indohp.org",
+    screenshoot: "indohp-rekber.png",
+    category: {
+      name: "Web"
+    }
+  },
+  {
+    name: "INDOHP Katalog",
     release: "2020 Nov",
     technologies: ["Nuxtjs"],
-    description: "Katalog produk INDOHP - PT Indonesia Hakiki Pertama",
+    description: "INDOHP Katalog",
     link: "https://katalog.indohp.co.id",
     screenshoot: "product-catalog-indohp.jpg",
     category: {

@@ -15,7 +15,7 @@
                 <div class="mt-24">
                     <a href="mailto:romadhanedy@gmail.com" target="__blank" class="gl-btn text-sm border p-3 mt-3 text-black bg-indigo-300 hover:bg-indigo-400 transition duration-500 ease-in-out mr-2">Email</a>
                     <a href="https://www.linkedin.com/in/romadhan-prasetyo/" target="__blank" class="gl-btn text-sm border p-3 mt-3 text-black bg-indigo-300 hover:bg-indigo-400 transition duration-500 ease-in-out mr-2">Linkedin</a>
-                    <a href="https://github.com/dyprast" target="__blank" class="gl-btn text-sm border p-3 mt-3 text-black bg-indigo-300 hover:bg-indigo-400 transition duration-500 ease-in-out">GitHub</a>
+                    <a href="https://github.com/dyvue" target="__blank" class="gl-btn text-sm border p-3 mt-3 text-black bg-indigo-300 hover:bg-indigo-400 transition duration-500 ease-in-out">GitHub</a>
                 </div>
             </div>
         </section>

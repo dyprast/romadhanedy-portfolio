@@ -12,7 +12,7 @@
         mounted() {
             this.$store.commit("INITIAL_PAGE", {
                 page: "home",
-                title: "Romadhan Edy Prasetyo"
+                title: "Romadhan Prasetyo"
             });
         },
     }
