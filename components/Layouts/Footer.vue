@@ -16,7 +16,7 @@
                             <span class="sm:text-gray-base md:text-white"> | </span>
                         </li>
                         <li class="">
-                            <a href="https://github.com/dyprast" target="blank" class="sm:text-gray-base md:text-white"> GitHub </a>
+                            <a href="https://github.com/dyvue" target="blank" class="sm:text-gray-base md:text-white"> GitHub </a>
                         </li>
                     </ul>
 				</div>

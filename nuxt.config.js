@@ -27,7 +27,8 @@ export default {
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode"
   ],
+  globalName: 'romadhanedy.my.id',
   build: {
     publicPath: '/'
-  }
+  },
 };

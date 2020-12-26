@@ -27,7 +27,7 @@ const data = [
     technologies: ["Private School Project"],
     description:
       "Artificial Intelligence, Speech Recognition",
-    link: "https://github.com/dyprast/romadhanedy.my.id/blob/main/assets/video/nabila.mp4?raw=true",
+    link: "https://github.com/dyvue/romadhanedy.my.id/blob/main/assets/video/nabila.mp4?raw=true",
     screenshoot: "nabila.png",
     category: {
       name: "Neural Network"
@@ -50,7 +50,7 @@ const data = [
     release: "2020 Mar",
     technologies: ["Cordova", "Sqlite"],
     description: "Guitar chord app",
-    link: "https://github.com/dyprast/dychord",
+    link: "https://github.com/dyvue/dychord",
     screenshoot: "dychord.jpg",
     category: {
       name: "Android"
@@ -61,7 +61,7 @@ const data = [
     release: "2020 Feb",
     technologies: ["Laravel", "Mysql"],
     description: "Restaurant cashier app",
-    link: "https://github.com/dyprast/dyresto",
+    link: "https://github.com/dyvue/dyresto",
     screenshoot: "dyresto.jpg",
     category: {
       name: "Web"
@@ -83,7 +83,7 @@ const data = [
     release: "2019 Nov",
     technologies: ["Laravel", "Mysql"],
     description: "Point of sale (LSP SMKN 10 Jakarta)",
-    link: "https://github.com/dyprast/dyposten",
+    link: "https://github.com/dyvue/dyposten",
     screenshoot: "dyposten.jpg",
     category: {
       name: "Web"
@@ -94,7 +94,7 @@ const data = [
     release: "2019 Mar",
     technologies: ["PHP", "Mysql"],
     description: "BNPB Indonesia - Aplikasi Disposisi",
-    link: "https://github.com/dyprast/PLPKL_Disposisi",
+    link: "https://github.com/dyvue/PLPKL_Disposisi",
     screenshoot: "disposisi.jpg",
     category: {
       name: "Web"
@@ -106,7 +106,7 @@ const data = [
     release: "2019 Feb",
     technologies: ["Laravel", "Mysql"],
     description: "BNPB Indonesia - Aplikasi Pendataan Bantuan BPBD",
-    link: "https://github.com/dyprast/PLPKL_BantuanBPBD",
+    link: "https://github.com/dyvue/PLPKL_BantuanBPBD",
     screenshoot: "bantuan-bpbd.jpg",
     category: {
       name: "Web"
@@ -117,7 +117,7 @@ const data = [
     release: "2019 Jan",
     technologies: ["Laravel", "Mysql"],
     description: "BNPB Indonesia - Aplikasi Realiasasi Anggaran",
-    link: "https://github.com/dyprast/PLPKL_RealisasiAnggaran",
+    link: "https://github.com/dyvue/PLPKL_RealisasiAnggaran",
     screenshoot: "realisasi-anggaran.jpg",
     category: {
       name: "Web"
@@ -151,7 +151,7 @@ const data = [
     release: "2020 Jun",
     technologies: ["Laravel", "Mysql"],
     description: "INDOHP Task Report Application",
-    link: "https://gitlab.com/dyprast/indohptaskreport",
+    link: "https://gitlab.com/dyvue/indohptaskreport",
     screenshoot: "indohp-taskreport.jpg",
     category: {
       name: "Web"
